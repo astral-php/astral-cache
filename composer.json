@@ -1,0 +1,56 @@
+{
+    "name": "astral-php/astral-cache",
+    "description": "Cache multi-drivers opt-in pour Astral — array, file, Redis/Memcache (extensions)",
+    "type": "library",
+    "version": "0.1.0",
+    "license": "MIT",
+    "keywords": ["astral", "php", "cache", "mvc"],
+    "authors": [
+        {
+            "name": "astral-php",
+            "homepage": "https://github.com/astral-php"
+        }
+    ],
+    "homepage": "https://github.com/astral-php/astral-cache",
+    "support": {
+        "source": "https://github.com/astral-php/astral-cache",
+        "issues": "https://github.com/astral-php/astral-cache/issues"
+    },
+    "require": {
+        "php": "^8.3",
+        "astral-php/astral-core": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "suggest": {
+        "ext-redis": "Driver Redis (CACHE_DRIVER=redis)",
+        "ext-memcache": "Driver Memcache historique (Windows / Laragon)",
+        "ext-memcached": "Driver Memcached (Linux / Docker)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Astral\\Cache\\": "src/Astral/Cache/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Astral\\Cache\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "astral-cache": {
+            "stubs": "stubs",
+            "config": "config"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
