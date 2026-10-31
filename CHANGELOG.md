@@ -1,4 +1,10 @@
 # Changelog — astral-cache
+## [0.2.0] — 2026-10-31
+
+### Modifié
+
+- astral-core ^2.1 (feuille 2.1 P6)
+
 
 ## [0.1.0] — 2026-10-29
 
